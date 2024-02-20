@@ -1,9 +1,9 @@
-import Image from "next/image";
-
-export default function sponsors() {
+export default function Sponsors() {
   return (
-    <>
-    
-    </>
+    <main>
+        <div>
+            <p>Sponsors</p>
+        </div>
+    </main>
   );
 }

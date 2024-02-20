@@ -1,7 +1,9 @@
-import Image from "next/image";
-
-export default function Page() {
+export default function About() {
   return (
-    <h1>Hello, About Page!</h1>
+    <main>
+        <div>
+            <p>About</p>
+        </div>
+    </main>
   );
 }

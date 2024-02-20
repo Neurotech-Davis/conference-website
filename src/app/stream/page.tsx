@@ -1,9 +1,9 @@
-import Image from "next/image";
-
-export default function stream() {
+export default function Stream() {
   return (
-    <>
-    
-    </>
+    <main>
+        <div>
+            <p>Stream</p>
+        </div>
+    </main>
   );
 }

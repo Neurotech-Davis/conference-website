@@ -1,9 +1,9 @@
-import Image from "next/image";
-
-export default function event() {
+export default function Event() {
   return (
-    <>
-    
-    </>
+    <main>
+        <div>
+            <p>Event</p>
+        </div>
+    </main>
   );
 }
