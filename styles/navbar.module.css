@@ -1,0 +1,17 @@
+.headerNav ul {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+  
+.headerNav a {
+    color: #a7a7a7;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.headerNav a.active {
+    color: #222;
+}
