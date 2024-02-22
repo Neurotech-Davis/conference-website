@@ -1,7 +1,7 @@
 export default function Stream() {
   return (
     <main>
-        <div>
+        <div className="p-10">
             <h1 className="text-2xl">Stream</h1>
             
             <p className="text-sm">

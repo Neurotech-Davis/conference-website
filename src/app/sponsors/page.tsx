@@ -1,7 +1,7 @@
 export default function Sponsors() {
   return (
     <main>
-        <div>
+        <div className="p-10">
             <h1 className="text-2xl">Sponsors</h1>
             
             <p className="text-sm">

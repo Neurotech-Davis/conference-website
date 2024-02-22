@@ -1,30 +1,145 @@
+import Image from 'next/image'
+import ntb_logo from '../../public/ntb.png'
+import angry from '../../public/angry.png'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 export default function Home() {
   return (
     <main>
-        <div>
-            <h1 className="text-2xl">Home</h1>
-            
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit pretium tempor. Fusce suscipit ante eget purus porttitor mollis. Vivamus tristique, purus id convallis pulvinar, turpis enim lacinia lectus, eu feugiat lorem felis vel sapien. Sed porta augue eget arcu iaculis, vitae fringilla diam condimentum. Sed ullamcorper ligula consequat magna hendrerit, in ultrices turpis luctus. Mauris in aliquet ex, eu vestibulum ante. Pellentesque imperdiet finibus ipsum, eget interdum mauris placerat quis. Suspendisse mattis faucibus nisl, et blandit est finibus eu. Sed et dui eu tellus porta feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consequat tellus ac orci porttitor, sit amet consequat lacus molestie. Fusce vestibulum lorem ut purus tristique, sed accumsan est luctus. Duis auctor ac ligula et congue.
-            </p>
-            
-            <p className="text-sm">
-              Donec at est at orci volutpat hendrerit. Duis ut euismod turpis, in pellentesque eros. Morbi eget finibus orci. Sed rhoncus eleifend arcu non iaculis. Praesent tincidunt posuere mauris ac fringilla. Duis id enim pretium tellus ultricies lacinia. Vivamus mi ipsum, porttitor non feugiat sed, iaculis a ex. Duis eleifend suscipit ultrices. Fusce sed nunc scelerisque, consectetur risus et, dictum diam.
-            </p>
+        <div className="p-40 flex flex-row justify-between">
+          <div className="flex flex-col">
+            <div>
+              <div className="flex flex-row font-outfit text-4xl">
+                Explore the
+                &nbsp;
+                <h1 className="font-bold font-outfit text-4xl">
+                  new wave
+                &nbsp;
+                </h1>
+              </div>
+              <div className="flex flex-row font-outfit text-4xl">
+                of
+                &nbsp;
+                <span className="font-bold font-outfit text-4xl">Neurotechnology.</span>
+              </div>
+            </div>
+          </div>
 
-            <p className="text-sm">
-              Donec eget sapien diam. Vestibulum at libero lorem. Ut id iaculis libero. Aliquam efficitur placerat malesuada. Sed sed cursus ante. Phasellus a tincidunt massa, at malesuada sem. Nunc tristique in leo nec varius. Integer laoreet libero justo, consectetur pulvinar eros varius non. Nulla iaculis sem eget metus mattis lobortis.
-            </p>
-
-            <p className="text-sm">
-              In porta sapien dolor, fermentum ornare tortor pulvinar nec. Vivamus accumsan ex augue, a accumsan ante lacinia nec. Praesent sed laoreet justo, ut pellentesque turpis. Curabitur suscipit est et velit tristique vestibulum. Nam tempus in sapien id condimentum. Ut luctus pharetra enim sit amet commodo. Quisque at interdum elit. Integer quis iaculis diam. Pellentesque eget scelerisque ante, sit amet rhoncus metus. Donec id dignissim magna, ac maximus quam.
-            </p>
-
-            <p className="text-sm">
-              Vestibulum pharetra ornare augue. In posuere turpis velit, nec tempor lacus lobortis eget. Quisque quis orci sed odio mattis ornare vel id urna. Maecenas gravida id est at hendrerit. Etiam nec nulla eget ex vestibulum porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam rhoncus maximus augue vel egestas. Integer pharetra metus ac nisl rutrum, sit amet tincidunt elit sagittis.
-            </p>
-
+          <div className="flex flex-col">
+            <span className="font-poppins text-4xl">XX.XX.2024</span>
+            <div className="font-poppins text-3xl">LOCATION</div>
+          </div>
         </div>
+
+        <div className="flex flex-row items-center justify-center place-items-center">
+          <span className="flex font-outfit text-2xl">
+            Presented By
+          </span>
+        </div>
+        
+        <div className="py-10 px-40 flex flex-row justify-between">
+          
+          <div className='flex flex-col items-center'>
+            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+              <Image
+                src={ntb_logo}
+                width={100}
+                height={100}
+                alt="Logo"
+              />
+            </div>
+
+            <span className="font-outfit font-thin text-xs">
+              Neurotech@Berkley
+            </span>
+          </div>
+        
+          <div className='flex flex-col items-center'>
+            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+                <Image
+                  src={ntb_logo}
+                  width={100}
+                  height={100}
+                  alt="Logo"
+                />
+              </div>
+            <span className="font-outfit font-thin text-xs">
+              CruX@LA
+            </span>
+          </div>
+
+          <div className='flex flex-col items-center'>
+            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+                <Image
+                  src={ntb_logo}
+                  width={100}
+                  height={100}
+                  alt="Logo"
+                />
+              </div>
+            <span className="font-outfit font-thin text-xs">
+              Neurotech@Davis
+            </span>
+          </div>
+        
+          <div className='flex flex-col items-center'>
+            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+                <Image
+                  src={ntb_logo}
+                  width={100}
+                  height={100}
+                  alt="Logo"
+                />
+              </div>
+            <span className="font-outfit font-thin text-xs">
+              Triton Neurotech@UCSD
+            </span>
+          </div>
+
+          <div className='flex flex-col items-center'>
+            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+                <Image
+                  src={ntb_logo}
+                  width={100}
+                  height={100}
+                  alt="Logo"
+                />
+              </div>
+            <span className="font-outfit font-thin text-xs">
+              NeuroTechSC@UCSC
+            </span>
+          </div>
+        </div>
+
+        <div className="flex flex-row items-start bg-blue-900">
+          <div className="items-start">
+            <Image
+                src={angry}
+                width={1228}
+                height={400}
+                alt="Logo"
+            />
+          </div>
+          
+          <div className="flex flex-col p-10">
+            <span className="font-outfit text-white font-thin">
+            The second annual California Neurotechnology Conference will be a full-day event held at UC Davis and jointly hosted by UC Davis, UCLA, UC Berkeley, UC San Diego, UC Santa Cruz, and USC. The event will bring together undergraduate student neurotechnology clubs from across the west coast, along with graduate students, academic researchers, and industry professionals. There are 4 main components of the conference: guest speaker presentations, industry and academic panels, a student club BCI competition, and research poster sessions. All four components except the research poster sessions will also be live-streamed to reach a broader audience.
+            To kick off and wrap up the conference, we will be hearing from our two esteemed speakers. Nathan Copeland is a BCI pioneer, neurotech consultant, and digital artist; he holds the record for longest time living with a BCI implant and has operated more machines with his mind than any other individual.
+            </span>
+
+            <div className="flex flex-row pt-4">
+              <div className="flex flex-shrink font-outfit text-blue-900 bg-red-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-6 py-2 text-center align-middle">
+                  Learn More
+                  <ChevronRightIcon/>
+              </div>
+            </div>
+            
+
+          </div>
+        
+        </div>
+        
+        blob
     </main>
   );
 }

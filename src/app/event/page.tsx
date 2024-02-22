@@ -1,7 +1,7 @@
 export default function Event() {
   return (
     <main>
-        <div>
+        <div className="p-10">
             <h1 className="text-2xl">Event</h1>
             
             <p className="text-sm">

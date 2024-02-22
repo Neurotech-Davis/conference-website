@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function NavBar() {
     const path = usePathname()
-    const style = "allign-center justify-center flex hover:text-blue-800"
+    const style = "text-xl antialiased font-poppins align-center justify-center flex hover:text-blue-800"
     const activeStyle = style + " text-blue-700"
 
-    const buttonStyle="text-white bg-blue-800 hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-4 py-2 text-center"
+    const buttonStyle="text-xl antialiased font-poppins text-white bg-blue-800 hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-4 py-2 text-center"
     const buttonActiveStyle= buttonStyle + ""
     //TODO
     // edit SVG to make it take up more of the canvas
@@ -21,16 +21,16 @@ export default function NavBar() {
                 <Link href="/">
                     <Image className=""
                         src="logoBLC.svg"
-                        width={75}
-                        height={75}
+                        width={150}
+                        height={150}
                         alt="Logo">
                     </Image>
                 </Link>
                 
                 <div className="flex flex-col justify-center items-start h-fullr">
-                    <span className="text-sm">California</span>
-                    <span className="text-sm">Neurotechnology</span>
-                    <span className="text-sm">Conferece</span>
+                    <span className="text-sm font-semibold">California</span>
+                    <span className="text-sm font-semibold">Neurotechnology</span>
+                    <span className="text-sm font-semibold">Conferece</span>
                 </div>
             </div>
             
@@ -41,7 +41,7 @@ export default function NavBar() {
                         Home
                     </Link>
                     <Link href='/about' className={path == '/about' ? activeStyle: style}>
-                        About
+                        About Us
                     </Link>
                     <Link href='/event' className={path == '/event' ? activeStyle: style}>
                         Event
@@ -55,7 +55,7 @@ export default function NavBar() {
 
                 </div>
 
-                <div className=" items-center flex">
+                <div className="pl-10 items-center flex ">
                         <Link href='/register' className={path == '/register' ? buttonStyle: buttonStyle}>
                             Register
                         </Link>

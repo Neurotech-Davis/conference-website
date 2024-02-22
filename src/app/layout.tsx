@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Poppins, Outfit } from "next/font/google";
+import { Inter,
+          Poppins as Sans, 
+          Outfit as Serif} from "next/font/google";
 import "./globals.css";
 import NavBar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
+const poppins = Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-poppins', style: ["normal", "italic"]})
+const outfit = Serif({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-outfit'})
 
 export const metadata: Metadata = {
   title: "Neurotech Conference Website",
@@ -19,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${poppins.variable} font-sans`}>
           <NavBar/>
             {children}
           <Footer/>
