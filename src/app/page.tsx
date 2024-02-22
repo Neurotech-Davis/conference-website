@@ -40,12 +40,13 @@ export default function Home() {
         <div className="py-10 px-40 flex flex-row justify-between">
           
           <div className='flex flex-col items-center'>
-            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+            <div className='h-24 w-24 flex items-center justify-center'>
               <Image
                 src={ntb_logo}
                 width={100}
                 height={100}
                 alt="Logo"
+                className="rounded-full overscroll-hidden"
               />
             </div>
 
@@ -55,12 +56,13 @@ export default function Home() {
           </div>
         
           <div className='flex flex-col items-center'>
-            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+            <div className='h-24 w-24 flex items-center justify-center'>
                 <Image
                   src={ntb_logo}
                   width={100}
                   height={100}
                   alt="Logo"
+                  className="rounded-full overscroll-hidden"
                 />
               </div>
             <span className="font-outfit font-thin text-xs">
@@ -69,12 +71,13 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col items-center'>
-            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+            <div className='h-24 w-24 flex items-center justify-center'>
                 <Image
                   src={ntb_logo}
                   width={100}
                   height={100}
                   alt="Logo"
+                  className="rounded-full overscroll-hidden"
                 />
               </div>
             <span className="font-outfit font-thin text-xs">
@@ -83,12 +86,13 @@ export default function Home() {
           </div>
         
           <div className='flex flex-col items-center'>
-            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+            <div className='h-24 w-24 flex items-center justify-center'>
                 <Image
                   src={ntb_logo}
                   width={100}
                   height={100}
                   alt="Logo"
+                  className="rounded-full overscroll-hidden"
                 />
               </div>
             <span className="font-outfit font-thin text-xs">
@@ -97,12 +101,13 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col items-center'>
-            <div className='rounded-full h-24 w-24 flex items-center justify-center'>
+            <div className='h-24 w-24 flex items-center justify-center'>
                 <Image
                   src={ntb_logo}
                   width={100}
                   height={100}
                   alt="Logo"
+                  className="rounded-full overscroll-hidden"
                 />
               </div>
             <span className="font-outfit font-thin text-xs">
@@ -124,7 +129,6 @@ export default function Home() {
           <div className="flex flex-col p-10">
             <span className="font-outfit text-white font-thin">
             The second annual California Neurotechnology Conference will be a full-day event held at UC Davis and jointly hosted by UC Davis, UCLA, UC Berkeley, UC San Diego, UC Santa Cruz, and USC. The event will bring together undergraduate student neurotechnology clubs from across the west coast, along with graduate students, academic researchers, and industry professionals. There are 4 main components of the conference: guest speaker presentations, industry and academic panels, a student club BCI competition, and research poster sessions. All four components except the research poster sessions will also be live-streamed to reach a broader audience.
-            To kick off and wrap up the conference, we will be hearing from our two esteemed speakers. Nathan Copeland is a BCI pioneer, neurotech consultant, and digital artist; he holds the record for longest time living with a BCI implant and has operated more machines with his mind than any other individual.
             </span>
 
             <div className="flex flex-row pt-4">
@@ -133,13 +137,15 @@ export default function Home() {
                   <ChevronRightIcon/>
               </div>
             </div>
-            
-
           </div>
-        
         </div>
         
-        blob
+        <div className="flex flex-row justify-center align-baseline py-11">
+          <span className="flex font-outfit text-2xl">
+            Speakers
+          </span>
+        </div>
+
     </main>
   );
 }

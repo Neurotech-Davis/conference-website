@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function NavBar() {
     const path = usePathname()
     const style = "text-xl antialiased font-poppins align-center justify-center flex hover:text-blue-800"
-    const activeStyle = style + " text-blue-700"
+    const activeStyle = style + " text-blue-900"
 
     const buttonStyle="text-xl antialiased font-poppins text-white bg-blue-800 hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-4 py-2 text-center"
     const buttonActiveStyle= buttonStyle + ""
@@ -15,14 +15,14 @@ export default function NavBar() {
     // Adjust to colors to match figma design
 
     return (
-        <div className="flex flex-rows justify-between mx-10">
+        <div className="flex flex-rows justify-between px-2 backdrop-filter backdrop-blur-lg bg-opacity-30 sticky top-0 z-10 bg-white border-b border-gray-200 rounded-b-3xl">
 
-            <div className="flex flex-rows">
+            <div className="flex flex-rows opacity-100">
                 <Link href="/">
                     <Image className=""
-                        src="logoBLC.svg"
-                        width={150}
-                        height={150}
+                        src="LogoBLC.svg"
+                        width={100}
+                        height={100}
                         alt="Logo">
                     </Image>
                 </Link>
@@ -41,7 +41,7 @@ export default function NavBar() {
                         Home
                     </Link>
                     <Link href='/about' className={path == '/about' ? activeStyle: style}>
-                        About Us
+                        About
                     </Link>
                     <Link href='/event' className={path == '/event' ? activeStyle: style}>
                         Event
@@ -55,7 +55,7 @@ export default function NavBar() {
 
                 </div>
 
-                <div className="pl-10 items-center flex ">
+                <div className="pl-10 items-center flex pr-4">
                         <Link href='/register' className={path == '/register' ? buttonStyle: buttonStyle}>
                             Register
                         </Link>
