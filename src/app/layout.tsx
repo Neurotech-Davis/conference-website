@@ -6,6 +6,8 @@ import "./globals.css";
 import NavBar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
+<link rel="icon" href="/favicon.ico" sizes="any" />
+
 const inter = Inter({ subsets: ["latin"] })
 const poppins = Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-poppins', style: ["normal", "italic"]})
 const outfit = Serif({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-outfit'})
@@ -23,7 +25,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans bg-gradient-to-br from-blue-200  to-red-300`}>
+      <body className={`${poppins.variable} font-sans bg-gradient-to-br from-blue-200  to-red-300 overscroll-none`}>
           <NavBar/>
             {children}
           <Footer/>

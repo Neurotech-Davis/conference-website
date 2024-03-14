@@ -1,28 +1,76 @@
+import React from 'react';
+import Image from 'next/image';
+import about_1 from '../../../public/about_1.jpeg';
+import about_2 from '../../../public/about_2.jpg';
+
 export default function About() {
   return (
     <main>
         <div className="p-10">
-            <h1 className="text-2xl">About</h1>
-            
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit pretium tempor. Fusce suscipit ante eget purus porttitor mollis. Vivamus tristique, purus id convallis pulvinar, turpis enim lacinia lectus, eu feugiat lorem felis vel sapien. Sed porta augue eget arcu iaculis, vitae fringilla diam condimentum. Sed ullamcorper ligula consequat magna hendrerit, in ultrices turpis luctus. Mauris in aliquet ex, eu vestibulum ante. Pellentesque imperdiet finibus ipsum, eget interdum mauris placerat quis. Suspendisse mattis faucibus nisl, et blandit est finibus eu. Sed et dui eu tellus porta feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consequat tellus ac orci porttitor, sit amet consequat lacus molestie. Fusce vestibulum lorem ut purus tristique, sed accumsan est luctus. Duis auctor ac ligula et congue.
-            </p>
-            
-            <p className="text-sm">
-              Donec at est at orci volutpat hendrerit. Duis ut euismod turpis, in pellentesque eros. Morbi eget finibus orci. Sed rhoncus eleifend arcu non iaculis. Praesent tincidunt posuere mauris ac fringilla. Duis id enim pretium tellus ultricies lacinia. Vivamus mi ipsum, porttitor non feugiat sed, iaculis a ex. Duis eleifend suscipit ultrices. Fusce sed nunc scelerisque, consectetur risus et, dictum diam.
-            </p>
 
-            <p className="text-sm">
-              Donec eget sapien diam. Vestibulum at libero lorem. Ut id iaculis libero. Aliquam efficitur placerat malesuada. Sed sed cursus ante. Phasellus a tincidunt massa, at malesuada sem. Nunc tristique in leo nec varius. Integer laoreet libero justo, consectetur pulvinar eros varius non. Nulla iaculis sem eget metus mattis lobortis.
-            </p>
+              <div className=" flex flex-row p-10 justify-between items-center">
+                  <div className='w-2/7'>
+                      <Image
+                      src={about_1}
+                      width={400}
+                      height={400}
+                      alt="Logo"
+                      className="h-auto w-auto  shadow-2xl rounded-lg"
+                      />
+                  </div>
 
-            <p className="text-sm">
-              In porta sapien dolor, fermentum ornare tortor pulvinar nec. Vivamus accumsan ex augue, a accumsan ante lacinia nec. Praesent sed laoreet justo, ut pellentesque turpis. Curabitur suscipit est et velit tristique vestibulum. Nam tempus in sapien id condimentum. Ut luctus pharetra enim sit amet commodo. Quisque at interdum elit. Integer quis iaculis diam. Pellentesque eget scelerisque ante, sit amet rhoncus metus. Donec id dignissim magna, ac maximus quam.
-            </p>
+                  <div className='w-3/4 pl-10'>
+                    <h1 className="text-4xl pb-4">Our Mission</h1>
+                      <p className="text-lg text-justify"> 
+                        The Second Annual California Neurotechnology Conference is coming to NorCal! 
+                        The inaugural conference accomplished something unprecedented: a wide-reaching West Coast symposium dedicated to neurotechnology and catered toward college students. 
+                        The 2024 conference will once again break beyond what has been done before, reaching wider and connecting more audiences. The conference will be live streamed for the first time, expanding its reach beyond the West Coast to engage participants worldwide. It will also branch out from its initial student-centered theme, bringing together professionals from industry and academia.
+                    </p>
+                  
+                  </div>
+              </div>
+              <div className=" flex flex-row p-10 items-center justify-between">
+                <div className="w-3/4 pr-16">
+                  <h1 className="text-4xl"> Event Components</h1>
+                  
+                  <h1 className="text-2xl py-4"> Guest Speakers  </h1>
+                  <p className="text-lg  text-justify"> 
+                  Presentations from our industry and academic guest speakers, who will talk about their lab’s projects and the current state of their area of research.
+                    </p>
 
-            <p className="text-sm">
-              Vestibulum pharetra ornare augue. In posuere turpis velit, nec tempor lacus lobortis eget. Quisque quis orci sed odio mattis ornare vel id urna. Maecenas gravida id est at hendrerit. Etiam nec nulla eget ex vestibulum porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam rhoncus maximus augue vel egestas. Integer pharetra metus ac nisl rutrum, sit amet tincidunt elit sagittis.
-            </p>
+                  <h1 className="text-2xl py-4"> Industry and Academic Panels </h1>
+                  <p className="text-lg text-justify"> 
+                  A panel Q&A will give participants an opportunity to ask questions to a panel of experts engaging in cutting-edge research and developing neurotechnology products.
+                    </p>
+
+                  <h1 className="text-2xl py-4"> Research Poster Sessions </h1>
+                  <p className="text-lg text-justify"> 
+                  The poster sessions will provide exposure for projects from labs, student groups, and applied researchers. It will also facilitate a sense of community, allowing students and professionals to exchange ideas and expand their knowledge of neurotechnology
+                    </p>
+
+                  <h1 className="text-2xl py-4"> BCI Competition </h1>
+                  <p className="text-lg text-justify"> 
+                  Competition between student clubs. Each school will bring one project, and student representatives will give a brief presentation and live demonstration. A panel of judges from industry and academia will determine the winner.
+                    </p>
+                </div>
+
+                <div className="w-1/4">
+                  <div className='flex items-center justify-center h-full'>
+                      <Image
+                      src={about_2}
+                      width={400}
+                      height={400}
+                      alt="Logo"
+                      className="h-auto w-auto border-spacing-2 shadow-2xl rounded-lg"
+                      />
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
 
         </div>
     </main>
