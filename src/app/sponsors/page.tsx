@@ -15,10 +15,10 @@ export default function Sponsors() {
                 <div className=" flex flex-col p-8 items-center">
 
                     UCLA Training in Neurotechnology Translation
-                  <div className=" flex">
+                  {/* <div className=" flex">
 
                     Amount of money
-                  </div>
+                  </div> */}
                 </div>
               </div>
         </div>
