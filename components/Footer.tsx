@@ -20,25 +20,26 @@ export default function Footer() {
 
                     <div className="flex flex-row justify-between">
                         
-                        <button className="flex px-4 flex-col items-center text-xs text-white ">
-                            <LinkedInIcon/>
-                            linkedIn
-                        </button>
+                        <Link href="https://www.linkedin.com/company/california-neurotechnology-conference/">
+                            <button className="flex px-4 flex-col items-center text-xs text-white ">
+                                <LinkedInIcon/>
+                                linkedIn
+                            </button>
+                        </Link>
 
 
-                        <button className="flex px-4 flex-col items-center text-xs text-white">
-                            <Link
-                                href={`mailto:conference2024@caneurotech.com`}
-                            >
+                        <Link href={`mailto:conference2024@caneurotech.com`}>
+                            <button className="flex px-4 flex-col items-center text-xs text-white">
                                 <EmailIcon/>
-                            </Link>
-                            Email
-                        </button>
-
-                        <button className="flex px-4 flex-col items-center text-xs text-white">
-                            <InstagramIcon/>
-                            Instagram
-                        </button>
+                                Email
+                            </button>
+                        </Link>
+                        <Link href="https://www.instagram.com/neurotechconference?igsh=ZDE1MWVjZGVmZQ==">
+                            <button className="flex px-4 flex-col items-center text-xs text-white">
+                                <InstagramIcon/>
+                                Instagram
+                            </button>
+                        </Link>
 
                     </div>
                 </div>

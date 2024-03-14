@@ -12,8 +12,7 @@ import Sharena_Rice from '../public/Sharena_Rice.png';
 export default function Carasouel() {
 
   return(
-    <Carousel show={3} slide={1} transition={0.5} infinite={true} useArrowKeys={true} >
-        
+    <Carousel show={3} slide={1} transition={0.5} infinite={true} useArrowKeys={true} swiping={true} responsive={true}>
         <div className="flex flex-col align-middle items-center">
           <ImageDiv image={David_Egleman} />
             <p>

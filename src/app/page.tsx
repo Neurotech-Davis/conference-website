@@ -10,6 +10,8 @@ import ntechusc from '../../public/ntechusc.png'
 import angry from '../../public/angry.png'
 import home_1 from '../../public/home_1.png'
 
+import Link from "next/link"
+
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import React from 'react';
 import Carousel from '../../components/Carousel';
@@ -172,10 +174,13 @@ export default function Home() {
             </span>
 
             <div className="flex flex-row pt-4">
-              <div className="flex flex-shrink font-outfit text-blue-900 bg-red-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-6 py-2 text-center align-middle">
-                  Learn More
+              <Link href='/about'>
+              <div className="flex flex-shrink font-outfit text-blue-900 bg-red-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-6 py-2 text-center align-middle items-center">
+                                Learn More
+                  
                   <ChevronRightIcon/>
               </div>
+              </Link>
             </div>
           </div>
         </div>
