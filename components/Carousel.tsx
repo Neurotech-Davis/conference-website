@@ -16,7 +16,7 @@ export default function Carasouel() {
         <div className="flex flex-col align-middle items-center">
           <ImageDiv image={David_Egleman} />
             <p>
-            David Egleman
+            David Eagleman
             </p>
         </div>
         <div className="flex flex-col align-middle items-center text-center">
