@@ -184,16 +184,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-        <div className="flex flex-row justify-center align-baseline py-11">
-          <span className="flex font-outfit text-3xl">
-            Speakers and Panelists
-          </span>
-        </div>
-        
-        <div className="p-8">
-          <Carousel/>
-        </div>
+
 
     </main>
   );
