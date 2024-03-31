@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import about_1 from '../../../public/about_1.jpeg';
 import about_2 from '../../../public/about_2.jpg';
+import Carousel from '../../../components/Carousel';
 
 export default function About() {
   return (
@@ -28,7 +31,9 @@ export default function About() {
                     </p>
                   
                   </div>
+                  
               </div>
+        
               <div className=" flex flex-row p-10 items-center justify-between">
                 <div className="w-3/4 pr-16">
                   <h1 className="text-4xl"> Event Components</h1>
@@ -53,7 +58,6 @@ export default function About() {
                   Competition between student clubs. Each school will bring one project, and student representatives will give a brief presentation and live demonstration. A panel of judges from industry and academia will determine the winner.
                     </p>
                 </div>
-
                 <div className="w-1/4">
                   <div className='flex items-center justify-center h-full'>
                       <Image
@@ -69,8 +73,14 @@ export default function About() {
 
               </div>
 
-
-
+        <div className="flex flex-row justify-center align-baseline py-11">
+          <span className="flex font-outfit text-3xl">
+            Speakers and Panelists
+          </span>
+        </div>
+        <div className="p-8">
+          <Carousel/>
+        </div>
 
         </div>
     </main>

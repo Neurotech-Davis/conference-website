@@ -64,7 +64,7 @@ export default function Home() {
             </div>
 
             <span className="font-outfit font-thin text-xs">
-              Neurotech@Berkley
+              Neurotech@Berkeley
             </span>
           </div>
         
