@@ -9,8 +9,8 @@ const ImageDiv: React.FC<ImageDivProps> = ({ image }) => {
     return (
         <Image
             src={image}
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             alt="Logo"
             className="rounded-full overscroll-hidden"
         />
