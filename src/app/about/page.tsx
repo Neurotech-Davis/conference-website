@@ -9,9 +9,9 @@ import Carousel from '../../../components/Carousel';
 export default function About() {
   return (
     <main>
-        <div className="p-10">
+        <div className="md:p-10 md:py-44 py-32">
 
-              <div className=" flex flex-row p-10 justify-between items-center">
+              <div className="md:flex flex-row p-10 md:justify-between items-center">
                   <div className='w-2/7'>
                       <Image
                       src={about_1}
@@ -22,7 +22,7 @@ export default function About() {
                       />
                   </div>
 
-                  <div className='w-3/4 pl-10'>
+                  <div className='w-3/4 pl-10 py-10 md:py-0'>
                     <h1 className="text-4xl pb-4">Our Mission</h1>
                       <p className="text-lg text-justify"> 
                         The Second Annual California Neurotechnology Conference is coming to NorCal! 
@@ -33,9 +33,8 @@ export default function About() {
                   </div>
                   
               </div>
-        
-              <div className=" flex flex-row p-10 items-center justify-between">
-                <div className="w-3/4 pr-16">
+              <div className="md:flex flex-row p-10 items-center md:justify-between">
+                <div className="w-3/4 md:pr-16">
                   <h1 className="text-4xl"> Event Components</h1>
                   
                   <h1 className="text-2xl py-4"> Guest Speakers  </h1>
@@ -83,6 +82,7 @@ export default function About() {
         </div>
 
         </div>
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </main>
   );
 }

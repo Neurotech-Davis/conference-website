@@ -4,7 +4,7 @@ import ucla_brain from '../../../public/ucla_brain.jpeg'
 export default function Sponsors() {
   return (
     <main>
-        <div className="flex flex-col min-h-screen p-10">
+        <div className="py-60 flex flex-col min-h-screen p-10">
               <div className=" flex flex-col pt-8 items-center">
               <Image className="rounded-full"
                         src={ucla_brain}
@@ -22,6 +22,7 @@ export default function Sponsors() {
                 </div>
               </div>
         </div>
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </main>
   );
 }

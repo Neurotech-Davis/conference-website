@@ -5,7 +5,7 @@ import _conference_schedule from "../../../public/_conference_schedule.jpeg";
 export default function Event() {
   return (
     <main>
-      <div className="flex flex-row items-center justify-center pt-10">
+      <div className="flex flex-row items-center justify-center pt-44">
         <Image
           src={_conference_schedule}
           width={1000}
@@ -27,6 +27,7 @@ export default function Event() {
               <p className="mb-4 text-sm text-justify">In 2023, we brought together over 300 neurotechnology enthusiasts from all backgrounds to create an experience far beyond our own expectations. In 2024, we will build on the success of our inaugural conference as we continue to inspire, educate, and unite.</p>
             </div>
         </div>
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </main>
   );
 }
