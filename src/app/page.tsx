@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="bg-blue-100 py-4">
+      <div className="bg-blue-50 py-4">
         <div className="flex flex-row justify-center align-baseline py-9">
           <span className="flex font-outfit text-3xl">
             Speakers and Panelists
