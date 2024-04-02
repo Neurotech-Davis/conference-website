@@ -27,7 +27,7 @@ export default function Event() {
               <p className="mb-4 text-sm text-justify">In 2023, we brought together over 300 neurotechnology enthusiasts from all backgrounds to create an experience far beyond our own expectations. In 2024, we will build on the success of our inaugural conference as we continue to inspire, educate, and unite.</p>
             </div>
         </div>
-        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+        <script async src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </main>
   );
 }
