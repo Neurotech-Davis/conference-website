@@ -62,15 +62,15 @@ export default function NavBar() {
                     <Link href='/sponsors' className={path == '/sponsors' ? activeStyle: style}>
                         Sponsors
                     </Link>
-                    <Link href='/venue' className={path == '/venue' ? activeStyle : style}>
+                    {/*<Link href='/venue' className={path == '/venue' ? activeStyle : style}>
                         Venue
-                    </Link>
+                    </Link>*/}
                     <Link href='https://docs.google.com/forms/u/2/d/1xcOGr0-h82FcyzXI7rfmHWavpwwntGKmFg6m4rZc6YY/edit' className={path == '/Posters' ? activeStyle: style}>
                         Posters
                     </Link>
-                    <Link href='/members' className={path == '/members' ? activeStyle : style}>
+                    {/*<Link href='/members' className={path == '/members' ? activeStyle : style}>
                         Members
-                    </Link>
+                    </Link>*/}
                     </ul>
                 </div>
             </div>
