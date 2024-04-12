@@ -26,7 +26,9 @@ import Carousel from '../../components/Carousel';
 export default function Home() {
   return (
     <main>
-        <div className="py-64 p-10 md:p-40 md:py-60 md:flex flex-row justify-between">
+      {/*<h1 className="pt-64 p-10 text-6xl md:p-40 md:py-60 md:flex flex-row justify-between font-bold mb-1">California Neurotechnology Conference</h1>*/}
+
+      <div className="py-64 p-10 md:p-40 md:py-60 md:flex flex-row justify-between">
 
         <div className="flex flex-col font-outfit text-4xl">
           <div>
@@ -81,10 +83,6 @@ export default function Home() {
         
         <div className="p-8 pb-12">
           <Carousel/>
-        </div>
-
-        <div className="flex justify-center">
-          (Swipe to see more)
         </div>
       </div>
 
