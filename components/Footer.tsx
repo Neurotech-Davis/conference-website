@@ -14,7 +14,7 @@ export default function Footer() {
 
                     <div className="flex flex-col items-start h-fullr">
                         <span className="text-xs text-white">Made by Neurotech@Davis</span>
-                        <span className="text-xs text-white">Designed by Ciel Wood, Dhruv Sangamwar, and Kyle</span>
+                        <span className="text-xs text-white">Designed by Ciel Wood and Dhruv Sangamwar</span>
                     </div>
 
 

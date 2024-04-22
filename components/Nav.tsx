@@ -48,6 +48,7 @@ export default function NavBar() {
                         </svg>
                     </button>
                 </div>
+                
                 <div className="hidden w-full md:flex md:w-auto md:order-3 " id="navbar-sticky">
                     <ul className="flex flex-col  bg-opacity-0 p-4 mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <Link href='/' className={path == '/' ? activeStyle: style}>
