@@ -77,7 +77,7 @@ export default function Home() {
       <div className="bg-blue-50 py-4">
         <div className="flex flex-row justify-center align-baseline py-9">
           <span className="flex font-outfit text-3xl">
-            Speakers and Panelists
+            Speakers and Panelists &nbsp; <Link href="/panelists">(read more here)</Link>
           </span>
         </div>
         
